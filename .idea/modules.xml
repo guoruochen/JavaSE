@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/GitTest/GitTest.iml" filepath="$PROJECT_DIR$/GitTest/GitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaSE.iml" filepath="$PROJECT_DIR$/.idea/JavaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test01/Test01.iml" filepath="$PROJECT_DIR$/Test01/Test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test02/Test02.iml" filepath="$PROJECT_DIR$/Test02/Test02.iml" />
     </modules>
   </component>
 </project>
