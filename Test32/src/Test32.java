@@ -89,15 +89,37 @@ public class Test32 {
         String s2 = s.toLowerCase();//小写转换
         String s3 = s.replace('s', 'a');//将字符串中的内容进行替换
         String s4 = s.replace('a', 'a');//将字符串中的内容进行替换
+        String s5 = "   asd    ".trim();//将字符串两端的空白字符删除（如果用户输入的信息有空格，可以用此方法处理）
+        String s6 = "abc".concat("123");//连接字符串（与+效果相同，建议用+）
+        String s7 = String.valueOf(4) + 1;//将参数转变为字符串
         System.out.println(Arrays.toString(arr_3));
         System.out.println(Arrays.toString(arr_4));
         System.out.println(Arrays.toString(arr_5));
         System.out.println(s1);
         System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+        System.out.println(s4 == s);//true  如果没有发生替换，则返回原始的字符串
+        System.out.println(s5);
+        System.out.println(s6);
+        System.out.println(s7);
+
+        //String常用操作3：判断（重要）
+        String m = "abc123abc";
+        String n = "abc123ABC";
+        System.out.println(m.equalsIgnoreCase(n));
+        System.out.println(m.equals(n));
+        System.out.println(n.contains("abc"));
+        System.out.println(n.startsWith("abc"));
+        System.out.println(n.endsWith("ABC"));
+
+        //String常用操作4：比较（从前往后按照Unicode值比较字符串的字符大小）
+        System.out.println("abc".compareTo("abd"));
+        System.out.println("abc".compareTo("abb"));
+        System.out.println("abc".compareTo("abc"));
 
         /*
         * 练习：利用字符串与字符之间的转换，将字符串中的小写字母变换为大写字母
-        * 实际开发使用toUpperCase()和toLowerCase()即可
         */
         //第一种方式：使用charAt()和String构造函数
         String lower = "abcdef123~呵呵";
