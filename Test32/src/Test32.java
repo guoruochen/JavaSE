@@ -107,7 +107,7 @@ public class Test32 {
         //String常用操作3：判断（重要）
         String m = "abc123abc";
         String n = "abc123ABC";
-        System.out.println(m.equalsIgnoreCase(n));
+        System.out.println(m.equalsIgnoreCase(n));//判断验证码时需要这个方法
         System.out.println(m.equals(n));
         System.out.println(n.contains("abc"));
         System.out.println(n.startsWith("abc"));
