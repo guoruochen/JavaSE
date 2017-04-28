@@ -52,7 +52,7 @@ public class Outer {
         class Inner_4{//字节码文件名Outer$1Inner_4.class
             private void go(){
                 System.out.println("外部类中的a="+Outer.this.a);//局部内部类也可以访问外部类成员
-                //!System.out.println(x);  局部内部类只能访问方法的final局部变量
+                System.out.println(x);  //JDK1.7时，局部内部类只能访问方法的final局部变量，JDK1.8取消了这个限制
                 System.out.println(y);
                 System.out.println(z);
             }
