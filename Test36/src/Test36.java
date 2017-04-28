@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,6 +20,8 @@ public class Test36{
     }
 
     private void show() {
+        int a  = 1;
+        final int b = 2;
         //匿名内部类
         //前提：匿名内部类必须继承或实现某外部类或接口，在这里就是实现了ActionListener接口
         //格式：new 父类/接口(){子类/实现类内容}
@@ -29,6 +30,8 @@ public class Test36{
             @Override
             public void actionPerformed(ActionEvent e) {
                 button.setText("I'm clicked");
+                System.out.println(a);
+                System.out.println(b);//JDK1.7时，匿名内部类只能访问方法的final局部变量，JDK1.8取消了这个限制
             }
         });
     }
