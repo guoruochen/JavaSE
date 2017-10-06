@@ -25,5 +25,6 @@ public class Test04 {
         System.out.println("5+5 = " + 5 + 5);//结果为5+5=55，过程是先拼接出"5+5=5"，然后继续进行拼接
         System.out.println("5+5 = " + (5 + 5));//结果为5+5=10，过程是先计算出10，再进行字符串拼接
         System.out.println(5 + 5 + " = 5+5");//结果为10=5+5，这是因为+操作符的顺序是从左往右，先进行了加法运算，然后才进行字符串拼接
+        System.out.println("haha" + null);//结果为hahanull，这个小知识点要注意下
     }
 }
